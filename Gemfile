@@ -16,6 +16,15 @@ gem 'jquery-rails',            '4.0.3'
 gem 'turbolinks',              '2.3.0'
 gem 'jbuilder',                '2.2.3'
 gem 'sdoc',                    '0.4.0', group: :doc
+gem 'redis-throttle', git: 'git://github.com/andreareginato/redis-throttle.git'
+gem 'rack-cors', :require => 'rack/cors'
+
+#api related
+gem 'active_hash_relation', github: 'kollegorna/active_hash_relation'
+gem 'active_model_serializers', '0.9.2'
+gem 'pundit', '~> 0.3.0'
+gem 'kaminari', '~> 0.16.1'
+gem 'rspec-api_helpers', github: 'kollegorna/rspec-api_helpers'
 
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
